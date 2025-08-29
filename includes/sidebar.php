@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="box box-solid">
-	  	<div class="box-header with-border">
+	  	<div class="box-header">
 	    	<h3 class="box-title"><b>Más Visto Hoy</b></h3>
 	  	</div>
 	  	<div class="box-body">
@@ -43,7 +43,7 @@
 
 <div class="row">
 	<div class='box box-solid'>
-	  	<div class='box-header with-border'>
+	  	<div class='box-header'>
 	    	<h3 class='box-title'><b>¡Síguenos en nuestras redes sociales!</b></h3>
 	  	</div>
 	  	<div class='box-body'>

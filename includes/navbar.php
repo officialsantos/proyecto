@@ -2,7 +2,8 @@
   <nav class="navbar navbar-static-top">
     <div class="container">
       <div class="navbar-header">
-        <a href="#" class="navbar-brand"><b>Patagonia</b>Viajes</a>
+        <a href="#"><img src="images/logoicon.png" height="48px" width="58px"></img></a>
+        <!--<a href="#" class="navbar-brand"><b>Pay N' Play</b></a>-->
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
         </button>
@@ -11,12 +12,12 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="index.php">HOME</a></li>
+          <li><a class="navbarBtn" href="index.php">HOME</a></li>
           <!--<li><a href="">ABOUT US</a></li>-->
           <!--<li><a href="">CONTACT US</a></li>-->
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORÍA <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
+            <a class="navbarBtn" href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORÍA <span class="caret"></span></a>
+            <ul class="navbarDrop dropdown-menu" role="menu">
               <?php
              
                 $conn = $pdo->open();
@@ -43,7 +44,7 @@
           <div class="input-group">
               <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Buscar producto..." required>
               <span class="input-group-btn" id="searchBtn" style="display:none;">
-                  <button type="submit" class="btn btn-default btn-flat"><i class="fa fa-search"></i> </button>
+                  <button type="submit" class="btn btn-default btn-flat" id="searchButton"> <i class="fa fa-search"></i> </button>
               </span>
           </div>
         </form>
@@ -54,7 +55,7 @@
         <ul class="nav navbar-nav">
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#" class="navbarBtn dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-shopping-cart"></i>
               <span class="label label-success cart_count"></span>
             </a>
@@ -100,8 +101,8 @@
             }
             else{
               echo "
-                <li><a href='login.php'>INICIAR SESIÓN</a></li>
-                <li><a href='signup.php'>REGISTRARSE</a></li>
+                <li><a class='navbarBtn' href='login.php'>INICIAR SESIÓN</a></li>
+                <li><a class='navbarBtn' href='signup.php'>REGISTRARSE</a></li>
               ";
             }
           ?>
